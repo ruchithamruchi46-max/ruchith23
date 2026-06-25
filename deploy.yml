@@ -1,0 +1,8 @@
+---
+  - name: deploy jar file
+    hosts:  localhost
+    tasks:
+     - name: Copy Jar File
+       copy:
+         src: target/jenkins-demo-1.0-SNAPSHOT.jar
+         dest: /mnt/c/deployment/jenkins-demo-1.0-SNAPSHOT.jar
